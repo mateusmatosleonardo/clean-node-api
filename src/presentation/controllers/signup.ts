@@ -19,13 +19,14 @@ export class SignUpController implements Controller {
         'password',
         'passwordConfirmation',
       ];
-
       for (const field of requiredFields) {
         if (!httpRequest.body[field]) {
           return badRequest(new MissingParamError(field));
         }
       }
-
+      if (httpRequest.body.password !== httpRequest.body.passwordConfirmation) {
+        return badRequest(new InvalidParamError('passwordConfirmation'));
+      }
       const isValid = this.emailValidator.isValid(httpRequest.body.email);
       if (!isValid) {
         return badRequest(new InvalidParamError('email'));
@@ -33,7 +34,6 @@ export class SignUpController implements Controller {
     } catch (error) {
       return serverError();
     }
-
     return {
       body: {},
       statusCode: 500,
