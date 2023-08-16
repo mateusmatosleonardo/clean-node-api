@@ -769,6 +769,11 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
+"@types/validator@^13.11.1":
+  version "13.11.1"
+  resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.11.1.tgz#6560af76ed54490e68c42f717ab4e742ba7be74b"
+  integrity sha512-d/MUkJYdOeKycmm75Arql4M5+UuXmf4cHdHKsyw1GcvnNgL6s77UkgSgJ8TE/rI5PYsnwYq5jkcWBLuN/MpQ1A==
+
 "@types/yargs-parser@*":
   version "21.0.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.0.tgz#0c60e537fa790f5f9472ed2776c2b71ec117351b"
@@ -3746,6 +3751,11 @@ v8-to-istanbul@^9.0.1:
     "@jridgewell/trace-mapping" "^0.3.12"
     "@types/istanbul-lib-coverage" "^2.0.1"
     convert-source-map "^1.6.0"
+
+validator@^13.11.0:
+  version "13.11.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-13.11.0.tgz#23ab3fd59290c61248364eabf4067f04955fbb1b"
+  integrity sha512-Ii+sehpSfZy+At5nPdnyMhx78fEoPDkR2XW/zimHEL3MyGJQOCQ7WeP20jPYRz7ZCpcKLB21NxuXHF3bxjStBQ==
 
 walker@^1.0.8:
   version "1.0.8"
